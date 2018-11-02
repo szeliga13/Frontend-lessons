@@ -1,0 +1,176 @@
+:root{
+    --primary:#0D47A1;
+    --secondary:#FFC107;
+    --lightblue:#5472D3;
+    --darkblue:#002171;
+    --yellow:#FFF350;
+    --brown:#C79100;
+    --black:#101010;
+
+--font-size-regular:2rem;
+--base-fon-size:8px;
+--font-size-article:1.75rem;
+--font-size-h1:3rem;
+
+--sans-serif:'Roboto', Arial, sans-serif;
+}
+
+html{
+    font-size: var(--base-fon-size)
+}
+
+body{
+font-family: var(--sans-serif);
+}
+
+h1{
+    font-size: var(--font-size-h1)
+}
+p{
+    font-size: var(--font-size-article)
+}
+
+.header{ 
+align-items:center;
+display: flex;
+padding:1em;
+background-color: var(--primary);
+display: flex;
+justify-content: space-between;
+
+}
+
+.flex{
+    display: flex;
+    position: relative;
+   justify-content: left;
+}
+
+.button{
+    padding: 10px;
+background-color: white;
+border: grey;
+border-radius: 4px;
+width: 100px;
+height: 36;
+box-shadow:skopiować z figmy;
+}
+
+.aboutus{
+    text-decoration: none;
+    color: white;
+    font-size: var(--font-size-regular);
+    align-self: center;
+    margin: 0px 16px 0px 0px;
+    box-sizing: border-box;
+}
+
+.vector{
+    align-content: center;
+    margin: 0px 8px 0px 8px;
+}
+
+.logo{
+display: flex;
+}
+
+.headerleft{
+    color: white;
+display: flex;
+align-items: center;
+}
+
+.headerleft h1{
+    margin:0;
+}
+
+.logo__circle{
+    background: var(--secondary);
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    margin-right: 2em;
+
+}
+
+.leftcontent{
+flex:1;
+position: relative;
+float: left;
+box-sizing: border-box;
+  
+}
+
+.leftcontent div{
+   font-family: var(--sans-serif);
+   color: white;
+   font-size: var(--font-size-regular);
+   padding: 14px;
+    background-color: var(--primary);
+    border-top: solid var(--lightblue);
+
+    box-sizing: border-box;
+}
+
+.leftcontent__last{
+    height: 20vh; 
+    background-color: var(--lightblue) !important;
+}
+
+.rightcontent{
+    padding: 16px;
+  flex:2;
+}
+.rightcontent h1{
+    margin:0;
+}
+
+.footer{
+    background-color: var(--secondary);
+    display: flex;
+}
+
+.bluebox{
+    box-sizing: border-box;
+    margin: 7.5px;
+    height: 48px;
+    width: 48px;
+    background-color: var(--lightblue);
+}
+
+
+@media( max-width:600px){
+.aboutus{
+    display: none;
+}
+
+
+
+}
+
+@media(max-width:600px){
+.leftcontent{
+    display: none;
+}
+.h1{
+    display: none;
+}
+
+}
+
+@media(min-width:600px){
+  .vector{
+    display: none;
+}  
+}
+
+
+@media( min-width:550px){
+p {
+    max-width: 406px;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+}

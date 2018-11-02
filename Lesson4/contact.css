@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(5, 83, 22);
+    color: white;
+    height: 90vh;
+    font-family: 'Charmonman', cursive;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div1 {
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    max-height: 500px;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+  
+    animation-fill-mode: forwards;
+}
+
+@keyframes anime{
+    0% {top: -500px;}
+    100% {top: 0;}
+}
+
+.div2{ position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: anime2;
+    animation-duration: 2s;
+    animation-delay: 3s; 
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+}
+
+@keyframes anime2{
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.xxx {
+    padding: 30px;
+    border: 2px solid;
+    border-color: aliceblue;
+    border-radius: 50%;
+}
+
+h4{
+    margin-bottom: 0px;
+}

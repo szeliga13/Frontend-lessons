@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(5, 83, 22);
+    color: white;
+    height: 90vh;
+    font-family: 'Charmonman', cursive;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div1 {
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 700px;
+    max-height: 500px;
+
+}
+.xxx {
+    position: relative;
+    padding: 30px;
+    border: 2px solid;
+    border-color: aliceblue;
+    border-radius: 50%;
+    animation-name: xyz;
+    animation-duration: 3s;
+}
+
+@keyframes xyz{
+    0% { transform:rotateY(0); }
+   100% { transform:rotateY(360deg); }
+}
+
+
+
